@@ -1,0 +1,68 @@
+.navbar {
+  background-color: #1f1f1f !important;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #fff !important;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f84464 !important;
+}
+
+.form-control {
+  background-color: #333;
+  border: 1px solid #444;
+  color: #fff;
+  width: 300px;
+}
+
+.form-control:focus {
+  background-color: #333;
+  border-color: #f84464;
+  color: #fff;
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  color: #999;
+}
+
+.btn-outline-light {
+  border-color: #444;
+  color: #fff;
+}
+
+.btn-outline-light:hover {
+  background-color: #f84464;
+  border-color: #f84464;
+}
+
+.offcanvas {
+  background-color: #1f1f1f;
+}
+
+.offcanvas-title {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .form-control {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .navbar-collapse {
+    padding: 1rem 0;
+  }
+} 

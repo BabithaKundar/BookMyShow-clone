@@ -1,0 +1,174 @@
+.booking-page {
+  padding-top: 80px;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.seat-map {
+  text-align: center;
+  padding: 2rem;
+}
+
+.screen {
+  background: linear-gradient(to bottom, #e0e0e0, #f8f9fa);
+  height: 40px;
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #666;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.seats-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #666;
+  border-radius: 4px;
+}
+
+.seat:hover:not(.booked) {
+  transform: scale(1.1);
+  color: var(--primary-color);
+}
+
+.seat.selected {
+  color: var(--primary-color);
+  background-color: rgba(248, 68, 100, 0.1);
+}
+
+.seat.booked {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.seat-legend {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.booking-summary {
+  position: sticky;
+  top: 100px;
+}
+
+.movie-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.movie-info img {
+  width: 80px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.movie-info h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.movie-info p {
+  margin: 0;
+  color: #666;
+}
+
+.show-times {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.show-times .btn {
+  min-width: 100px;
+  text-align: center;
+}
+
+.price-summary {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.price-item.total {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Payment Modal Styles */
+.modal-content {
+  background-color: white;
+  border-radius: 8px;
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .booking-summary {
+    position: static;
+    margin-top: 2rem;
+  }
+
+  .seats-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .seat {
+    width: 30px;
+    height: 30px;
+  }
+
+  .show-times .btn {
+    min-width: 80px;
+  }
+} 

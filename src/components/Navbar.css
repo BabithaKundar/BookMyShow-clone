@@ -1,0 +1,74 @@
+.navbar {
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  background-color: #1a1a1a !important;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin-right: 1.5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 35px;
+  width: auto;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.form-control {
+  width: 300px;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar .btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar .fa-icon {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.navbar .fa-icon:hover {
+  color: #ffc107;
+}
+
+@media (max-width: 991px) {
+  .form-control {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .navbar-nav {
+    margin-top: 0.5rem;
+  }
+} 

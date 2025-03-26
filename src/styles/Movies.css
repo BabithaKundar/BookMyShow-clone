@@ -1,0 +1,109 @@
+.movies-page {
+  padding-top: 80px;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.filters {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.filters .form-control,
+.filters .form-select {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  padding: 0.5rem 1rem;
+}
+
+.filters .form-control:focus,
+.filters .form-select:focus {
+  border-color: #f84464;
+  box-shadow: 0 0 0 0.2rem rgba(248, 68, 100, 0.25);
+}
+
+.movie-card {
+  transition: transform 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: 100%;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-card .card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.movie-card .card-text {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.movie-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.rating {
+  background-color: #f84464;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.price {
+  font-weight: 600;
+  color: #333;
+}
+
+.btn-primary {
+  background-color: #f84464;
+  border-color: #f84464;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: #e63e5a;
+  border-color: #e63e5a;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .filters {
+    padding: 1rem;
+  }
+
+  .filters .form-control,
+  .filters .form-select {
+    margin-bottom: 1rem;
+  }
+
+  .movie-card .card-img-top {
+    height: 200px;
+  }
+} 
